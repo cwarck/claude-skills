@@ -1,0 +1,21 @@
+{
+  "name": "cwarck-claude-skills",
+  "owner": {
+    "name": "cwarck"
+  },
+  "metadata": {
+    "description": "Cwarck Claude Code skills.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "thinking",
+      "description": "Critical thinking skills.",
+      "source": "./",
+      "skills": [
+        "./skills/dialectic",
+        "./skills/feynman"
+      ]
+    }
+  ]
+}
