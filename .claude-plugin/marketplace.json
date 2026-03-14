@@ -5,26 +5,18 @@
   },
   "metadata": {
     "description": "Cwarck Claude Code skills.",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
-      "name": "thinking",
-      "description": "Critical thinking skills.",
+      "name": "skills",
+      "description": "Cwarck Claude Code skills.",
       "source": "./",
       "strict": false,
       "skills": [
+        "./skills/commit",
         "./skills/dialectic",
         "./skills/roast"
-      ]
-    },
-    {
-      "name": "commit",
-      "description": "Git commit skill using Conventional Commits spec.",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/commit"
       ]
     }
   ]
