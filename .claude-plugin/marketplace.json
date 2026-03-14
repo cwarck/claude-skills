@@ -12,6 +12,7 @@
       "name": "thinking",
       "description": "Critical thinking skills.",
       "source": "./",
+      "strict": false,
       "skills": [
         "./skills/dialectic",
         "./skills/roast"
@@ -21,6 +22,7 @@
       "name": "commit",
       "description": "Git commit skill using Conventional Commits spec.",
       "source": "./",
+      "strict": false,
       "skills": [
         "./skills/commit"
       ]
