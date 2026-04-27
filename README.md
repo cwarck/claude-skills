@@ -1,6 +1,15 @@
-# cwarck-claude-skills
+# agents
 
-My daily-driver collection of Claude Code skills.
+Single repo for all my agentic stuff — skills, plugins, configs, and whatever else fits the agent workflow.
+
+## What lives here
+
+| Directory | Purpose |
+|-----------|---------|
+| `skills/` | Skills (see below). |
+| `.claude-plugin/` | Plugin marketplace manifest. |
+
+More categories (agents, prompts, MCP configs, etc.) get their own top-level directory as they show up.
 
 ## Skills
 
@@ -17,25 +26,25 @@ My daily-driver collection of Claude Code skills.
 
 **Claude Code (marketplace):**
 ```shell
-/plugin marketplace add cwarck/claude-skills
+/plugin marketplace add cwarck/agents
 /plugin install skills@cwarck-claude-skills
 ```
 
 **Manual:**
 ```bash
-git clone --depth 1 https://github.com/cwarck/claude-skills.git /tmp/cwarck-claude-skills
-cp -r /tmp/cwarck-claude-skills/skills/commit ~/.claude/skills/commit
-cp -r /tmp/cwarck-claude-skills/skills/dialectic ~/.claude/skills/dialectic
-cp -r /tmp/cwarck-claude-skills/skills/ralph-research ~/.claude/skills/ralph-research
-cp -r /tmp/cwarck-claude-skills/skills/ralph-plan ~/.claude/skills/ralph-plan
-cp -r /tmp/cwarck-claude-skills/skills/ralph-build ~/.claude/skills/ralph-build
-cp -r /tmp/cwarck-claude-skills/skills/roast ~/.claude/skills/roast
-rm -rf /tmp/cwarck-claude-skills
+git clone --depth 1 https://github.com/cwarck/agents.git /tmp/cwarck-agents
+cp -r /tmp/cwarck-agents/skills/commit ~/.claude/skills/commit
+cp -r /tmp/cwarck-agents/skills/dialectic ~/.claude/skills/dialectic
+cp -r /tmp/cwarck-agents/skills/ralph-research ~/.claude/skills/ralph-research
+cp -r /tmp/cwarck-agents/skills/ralph-plan ~/.claude/skills/ralph-plan
+cp -r /tmp/cwarck-agents/skills/ralph-build ~/.claude/skills/ralph-build
+cp -r /tmp/cwarck-agents/skills/roast ~/.claude/skills/roast
+rm -rf /tmp/cwarck-agents
 ```
 
 ## Usage
 
-The skills activate automatically based on your prompt. Examples:
+Skills activate automatically based on your prompt. Examples:
 
 ```
 > dialectic: we should adopt a monorepo for all our microservices
