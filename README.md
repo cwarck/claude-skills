@@ -15,7 +15,6 @@ More categories (agents, prompts, MCP configs, etc.) get their own top-level dir
 
 | Skill | What it does |
 |-------|-------------|
-| `commit` | Create a git commit following the Conventional Commits spec. |
 | `dialectic` | Dialectical reasoning — thesis, antithesis, synthesis. Stress-test positions, compare approaches, and argue both sides before committing. |
 | `roast` | Brutally honest, no-nonsense feedback on anything — code, ideas, designs, architecture, writing, plans. |
 

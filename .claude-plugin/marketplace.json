@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Cwarck Claude Code skills.",
-    "version": "1.4.0"
+    "version": "1.4.1"
   },
   "plugins": [
     {
@@ -13,11 +13,7 @@
       "description": "Cwarck Claude Code skills.",
       "source": "./",
       "strict": false,
-      "skills": [
-        "./skills/commit",
-        "./skills/dialectic",
-        "./skills/roast"
-      ]
+      "skills": ["./skills/dialectic", "./skills/roast"]
     }
   ]
 }
