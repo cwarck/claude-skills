@@ -1,5 +1,5 @@
 ---
-name: grug2
+name: grug
 description: Grug-lens simplicity audit of code, architecture, or ideas — flags complexity, premature abstraction, over-engineering; no-bullshit filter or "study the repo" pass.
 ---
 
