@@ -1,12 +1,6 @@
 ---
 name: dialectic
-description: >
-  Analyze a position, idea, or decision using dialectical reasoning: thesis, antithesis, synthesis.
-  Use when the user asks to "dialectic", "steel man and steel man against", "argue both sides",
-  "pros and cons", "should I X or Y", "what are the tradeoffs", "devil's advocate",
-  "challenge this idea", "poke holes in this", "convince me not to do X", or generally wants to
-  stress-test a position before committing. Also use when comparing two approaches or technologies
-  and the user wants a rigorous evaluation rather than a surface-level list.
+description: Run dialectical analysis. Use when you need to compare two things or to pressure-test the assumption.
 ---
 
 Apply dialectical analysis to $ARGUMENTS using parallel subagents.
@@ -19,12 +13,12 @@ If the input is a comparison ("React vs Vue", "should I X or Y"), pick the first
 
 ## Execution
 
-**CRITICAL:** Spawn TWO subagents in parallel. Each receives ONLY its own assignment and the user's input — never the other agent's output.
+Spawn two subagents in parallel. Each receives only its own assignment and the user's input — never the other agent's output.
 
 ### Agent 1 — Thesis
 
 ```
-You are building the strongest possible case FOR the following position. Advocate, not judge. Go all in.
+You are building the strongest possible case for the following position. Advocate, not judge. Go all in.
 
 Position: $ARGUMENTS
 
@@ -32,14 +26,14 @@ Position: $ARGUMENTS
 - Identify core assumptions and conditions under which this is clearly correct.
 - Use specific scenarios, numbers, examples — not abstract reasoning.
 - If the input involves code, cite file paths and line numbers as evidence.
-- Do NOT argue against, hedge, or "both sides" it.
+- Do not argue against, hedge, or "both sides" it.
 - Match depth to input: one-liner → focused case; detailed design → thorough defense.
 ```
 
 ### Agent 2 — Antithesis
 
 ```
-You are building the strongest possible case AGAINST the following position. Adversary, not judge. Go all in.
+You are building the strongest possible case against the following position. Adversary, not judge. Go all in.
 
 Position: $ARGUMENTS
 
@@ -47,13 +41,13 @@ Position: $ARGUMENTS
 - Name conditions under which the OPPOSITE position is clearly correct.
 - Use specific scenarios, numbers, examples — not abstract reasoning.
 - If the input involves code, cite file paths and line numbers as evidence.
-- Do NOT concede anything or hedge.
+- Do not concede anything or hedge.
 - Match depth to input: one-liner → focused attack; detailed design → thorough dismantling.
 ```
 
 ## After both agents return
 
-Present results labeled **Thesis** and **Antithesis**, then YOU (main agent) write:
+Present results labeled **Thesis** and **Antithesis**, then you (main agent) write:
 
 ### Synthesis
 - Don't split the difference or "both sides" it into mush.

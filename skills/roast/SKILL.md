@@ -1,7 +1,6 @@
 ---
 name: roast
-description: >
-  Give brutally honest, no-nonsense feedback on anything — code, ideas, designs, architecture, writing, plans. Use this skill when a user asks to "roast", "tear apart", "rip apart", "give harsh feedback", "don't sugarcoat", "be brutal", "what's wrong with this", "don't hold back", "give it to me straight", or otherwise signals they want unfiltered critical feedback rather than balanced diplomatic assessment.
+description: Give brutally honest, no-nonsense feedback on anything — code, ideas, designs, architecture, writing, plans.
 ---
 
 Give brutally honest feedback on $ARGUMENTS. If no arguments are provided, roast whatever the user has been working on in the current conversation — look at recent code, files, or ideas discussed.
