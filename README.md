@@ -16,7 +16,9 @@ More categories (agents, prompts, MCP configs, etc.) get their own top-level dir
 | Skill | What it does |
 |-------|-------------|
 | `dialectic` | Dialectical reasoning — thesis, antithesis, synthesis. Stress-test positions, compare approaches, and argue both sides before committing. |
+| `grug` | Grug-lens simplicity audit — flags complexity, premature abstraction, over-engineering. No-bullshit filter for code, architecture, or ideas. |
 | `roast` | Brutally honest, no-nonsense feedback on anything — code, ideas, designs, architecture, writing, plans. |
+| `site-design` | Build or audit websites that don't look AI-generated — banned + avoid anti-patterns and actionable rules to kill the LLM-default look. |
 
 ## Install
 

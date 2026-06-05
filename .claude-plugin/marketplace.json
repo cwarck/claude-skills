@@ -13,7 +13,7 @@
       "description": "Cwarck Claude Code skills.",
       "source": "./",
       "strict": false,
-      "skills": ["./skills/dialectic", "./skills/roast"]
+      "skills": ["./skills/dialectic", "./skills/grug", "./skills/roast", "./skills/site-design"]
     }
   ]
 }
